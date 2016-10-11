@@ -11,7 +11,7 @@ $bot_id = authTest($http, $config['slack_token'])['user_id'];
 $config['bot_id'] = $bot_id;
 $config['pid'] = $pid;
 file_put_contents('config.json', json_encode($config));
-runStayAlive($config);
+runStayAlive();
 if (isset($config['sickrage_username']) and isset($config['sickrage_password'])) {
   $sickrage = new SickRage($config['sickrage_url'], $config['sickrage_token'], $config['sickrage_username'], $config['sickrage_password']);
 }else {

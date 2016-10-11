@@ -272,21 +272,22 @@ function checkSchedule($http, $sickrage, $config, $channel_id)
   }
 }
 
-function runStayAlive($config)
+function runStayAlive()
 {
+  $config = json_decode(file_get_contents('config.json'), true);
   if (isset($config['stay_alive_pid']) != false and $config['stay_alive_pid'] != '') {
     $pid = $config['stay_alive_pid'];
     exec("kill -0 $pid > activeTest 2>&1");
     if (file_get_contents("activeTest") != '') {
       echo "stay alive had a pid but it was not running\n";
-      exec('nohup php stayAlive.php >> tvBot.log 2>&1 &');
+      exec('nohup php tvBot_stayAlive.php >> tvBot.log 2>&1 &');
       echo "turned on stay alive\n";
     }else {
       echo "stay alive is already on\n";
     }
   }else {
     echo "stay alive does not have a pid\n";
-    exec('nohup php stayAlive.php >> tvBot.log 2>&1 &');
+    exec('nohup php tvBot_stayAlive.php >> tvBot.log 2>&1 &');
     echo "turned on stay alive\n";
   }
 }
