@@ -1,0 +1,6 @@
+vendor/*
+*.log
+*db*
+activeTest
+*test*
+*lock
