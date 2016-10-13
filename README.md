@@ -10,7 +10,7 @@ FYI, i'm a rookie codder so don't learn how to code from my bot :)
 * periodically (or by request) sends you your upcoming schedule 
 
 
-## how to make it do it-
+## How to make it do it-
 * open a slack account
 * create a "bot custom integration" from slacks settings screen, it will give you a bot-token
 * add that bot-token to the config under the "slack_token"
@@ -22,3 +22,10 @@ FYI, i'm a rookie codder so don't learn how to code from my bot :)
 * for debug logs set debug to true
 * run "composer update" via your command line interface (aka terminal) 
 * run "php robo start:tv-bot" and you are live!!
+
+## Thanks
+kryptonit3/sickrage - for the cool sickrage api wrapper <br />
+coderstephen/slack-client - for the easy to use WS slack client <br />
+guzzlehttp/guzzle - for the powerfull http client <br />
+codegyre/robo - for siplifing CLI commands <br />
+Please respect there terms of use, have fun and stay safe ;)
