@@ -1,16 +1,17 @@
 # slack-sickrage-bot
 To the good people of the open-source community! 
 This is a sickrage slack bot written in php, just really a mash up between other open source projects.
-FYI, i'm a rookie codder so don't learn how to code from my bot :)
+I forked this from matansh/slack-sickrage-bot to play with some things because I'm a php/git noob. 
+I plan to add some help responses if mentioned and it doesn't know what you want, as well as making a docker for it. 
 
 
-## What it does-
+## What it does
 * adds new shows to your sickrage wanted list
 * sends over a list of "added" shows
 * periodically (or by request) sends you your upcoming schedule 
 
 
-## How to make it do it-
+## How to make it do it
 * open a slack account
 * create a "bot custom integration" from slacks settings screen, it will give you a bot-token
 * add that bot-token to the config under the "slack_token"
@@ -22,6 +23,12 @@ FYI, i'm a rookie codder so don't learn how to code from my bot :)
 * for debug logs set debug to true
 * run "composer update" via your command line interface (aka terminal) 
 * run "php robo start:tv-bot" and you are live!!
+
+## Some Notes
+*It currently only responds if you @mention it, even if you message it directly. 
+*To have it do it's thing, you need to say @<it's name> add <show>
+
+
 
 ## Thanks
 kryptonit3/sickrage - for the cool sickrage api wrapper <br />
