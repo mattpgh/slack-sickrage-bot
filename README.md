@@ -25,8 +25,8 @@ I plan to add some help responses if mentioned and it doesn't know what you want
 * run "php robo start:tv-bot" and you are live!!
 
 ## Some Notes
-*It currently only responds if you @mention it, even if you message it directly. 
-*To have it do it's thing, you need to say @<it's name> add <show>
+* It currently only responds if you @mention it, even if you message it directly. 
+* To have it do it's thing, you need to say @<bot name> add <show>
 
 
 
